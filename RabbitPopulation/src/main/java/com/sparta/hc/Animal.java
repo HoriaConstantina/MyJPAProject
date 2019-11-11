@@ -2,27 +2,31 @@ package com.sparta.hc;
 
 public interface Animal {
 
-    int setMonths(int months);
-
     int getMonths();
+
+    void populateLists();
 
     String getGender();
 
-    String setGender(String gender);
-
-    boolean isAlive();
-
-    boolean available();
-
-    boolean pregnant();
-
-    boolean breed();
-
     boolean isMature();
 
-    boolean gaveBirth();
+    boolean breed(int time);
 
+    boolean incrementMonths();
 
+    void giveBirth();
 
+    int incrementRabbitAge();
 
+    int feed();
+
+    void incrementFoxAge();
+
+    void foxBreeding();
+
+    boolean foxMale();
+
+    void newBabies(int babyRabbit);
+
+    int eatFood(int noOfMeals);
 }
